@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MennoHost | About</title>
+        <link rel="stylesheet" href="https://use.typekit.net/hvn8zbg.css">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <div class='container'>
+            <header>
+                <a href='index.html'>
+                    <img src='assets/img/logo.png' />
+                </a>
+                <nav>
+                    <a href='about.html'>About</a>
+                    <a href='contact.html'>Sign Up</a>
+                </nav>
+            </header>
+
+            <div class='text-container' style='margin-bottom: 12rem;'>
+                <h1 class='hero title' style='margin-top: 8rem'>Sign Up</h1>
+                <p>Please fill out the contact form to sign up for MennoHost. I will get back to you soon!</p>
+                <form
+                        action="https://formspree.io/f/xanwkjdo"
+                        method="POST"
+                >
+
+                    <div style='display: flex; gap: 1rem;'>
+                        <label>
+                            Name:
+                            <input type="text" name="name">
+                        </label>
+                        <label>
+                            Email:
+                            <input type="email" name="email">
+                        </label>
+                    </div>
+                    <div style='display: flex; gap: 1rem;'>
+                        <label>
+                            Domain:
+                            <input type="text" name="domain">
+                        </label>
+                        <label>
+                            Are you migrating an existing site, or starting a new one?
+                            <select name='migration-needed'>
+                                <option value='true'>Migrating an existing site</option>
+                                <option value='false'>Creating a new site</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label>
+                        Plan type
+                        <select name='plan' style='width: min-content;'>
+                            <option value='0'>Individual (Free)</option>
+                            <option value='1'>Starter ($5/mo)</option>
+                            <option value='2'>Business ($15/mo)</option>
+                            <option value='3'>Professional ($30/mo)</option>
+                        </select>
+                    </label>
+                    <label>
+                        Message:
+                        <textarea name="message"></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <hr class='zig'>
+            <hr class='zag'>
+
+            <h1 class='hero title' style='margin: 8rem 0;'>Get started today with web hosting that <i>aligns with your values.</i></h1>
+            <footer>
+                <p>Created with discernment and forbearance by <a href='https://yoder.dev'>Bryce Yoder</a> in Lancaster, PA</p>
+            </footer>
+        </div>
+    </body>
+</html>

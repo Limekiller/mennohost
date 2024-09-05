@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ebony';
+}
+a {
+    color: unset;
+}
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+    background: white;
+    z-index: 3;
+}
+header img {
+    width: 15rem;
+}
+.container {
+    max-width: 80rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+.hero.title {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: -5rem;
+}
+.hero.title i {
+    font-weight: 500;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'meno-display';
+}
+hr {
+    border: none;
+    border-top: 1px solid black;
+}
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+hr.zig, hr.zag {
+  border: none;
+  height: 30px;
+  margin: -4rem 50px 0 50px;
+}
+hr.zig{
+  background: linear-gradient(-150deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(150deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 2;
+  position: relative;
+}
+
+hr.zag {
+  background: linear-gradient(-150deg, #333 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(150deg, #333 20px, #FFF 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 1;
+  margin-top: -28px;
+}
+
+.hero.subtitle {
+    font-size: 3rem;
+}
+.fp-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+}
+.fp-section.hero {
+    margin-top: -6rem;
+}
+
+.plans {
+    display: flex;
+    gap: 1rem;
+}
+.plan {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+.plan hr {
+    width: calc(100% + 4rem);
+    margin: 0.5rem 0 0.5rem -2rem;
+}
+.plan h2 {
+    font-size: 4rem;
+}
+.plan .dollar {
+    font-size: 2rem;
+    vertical-align: super;
+}
+.plan .unit {
+    font-size: 2rem;
+}
+
+.feature-set {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.feature-set h1 {
+    font-size: 3rem;
+    font-style: italic;
+}
+.feature-set p {
+    max-width: 40rem;
+}
+.feature-set img {
+    border-radius: 99rem;
+    width: 15rem;
+    border: 3px solid white;
+    outline: 1px solid black;
+}
+
+.text-container {
+    margin: auto;
+    max-width: 50rem;
+}
+
+form, label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form {
+    gap: 1rem;
+}
+input, textarea, select {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+}
+
+footer {
+    background: black;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
