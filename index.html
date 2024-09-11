@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/hvn8zbg.css">
     <style>
         body {
-            background: #fffff4;
+            background: #fff9f9;
             margin: 0;
+            font-family: 'ebony';
         }
         .container {
             width: 100vw;
@@ -19,15 +20,19 @@
             justify-content: center;
             flex-direction: column;
             text-align: center;
+            padding: 0 2rem;
+            box-sizing: border-box;
         }
         img {
             margin-top: -5rem;
-            width: 40rem;
+            max-width: 40rem;
+            width: calc(100% - 2rem);
         }
         h1 {
             font-family: 'meno-display';
             max-width: 70rem;
             font-size: 2rem;
+            font-weight: 400;
         }
         button {
             margin-top: 1rem;
@@ -64,6 +69,15 @@
             border: 1px solid black;
             border-radius: 0.5rem;
             padding: 0.5rem;
+        }
+
+        @media screen and (max-width: 400px) {
+            html {
+                font-size: 12px;
+            }
+            h1 {
+                font-weight: 400;
+            }
         }
     </style>
   </head>
